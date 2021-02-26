@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE34601B-193B-48EA-B6BA-B867B1B724EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pizzeria</RootNamespace>
+    <AssemblyName>Pizzeria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fenetres\FenetreMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenetres\FenetreMain.Designer.cs">
+      <DependentUpon>FenetreMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\Formulaire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fenetres\Formulaire.Designer.cs">
+      <DependentUpon>Formulaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Fenetres\FenetreMain.resx">
+      <DependentUpon>FenetreMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenetres\Formulaire.resx">
+      <DependentUpon>Formulaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ressources\Photos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\icons8_pizza.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\icons8_pizza_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHOP BY PANDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\multiply_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\square_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\minus_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\delete_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\rounded_square_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\subtract_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\pizza_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\delivery_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\collectibles_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\user_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\home_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\gmail_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\pizza_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\cola_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\contact_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thank1920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizza_margerita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\sand_timer_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\car_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Logos\money_bag_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boisson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PizzaGrand.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
