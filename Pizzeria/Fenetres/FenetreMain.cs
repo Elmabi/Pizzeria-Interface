@@ -32,7 +32,7 @@ namespace Pizzeria
             if (this.Height == 1000 && this.Width == 1920)
             {
                 this.Height = 720;
-                this.Width = 1081;
+                this.Width = 1080;
                 pictureBox1.Image = global::Pizzeria.Properties.Resources.Thank;
 
             }
